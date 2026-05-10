@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Gupta Portfolio</title>
+    <link rel="icon" type="image/avif" href="./assets/open-tab-image.avif">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <nav>
+        <div class="nav-logo">SG.dev</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-icon" id="toggleIcon">🌙</span>
+                <span id="toggleLabel">Dark</span>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for new opportunities
+            </div>
+
+            <h1 class="hero-name">
+                Saurabh<br>
+                <span class="line2">Gupta</span>
+            </h1>
+
+            <p class="hero-title">Full Stack Developer · Angular · .NET · Azure</p>
+
+            <p class="hero-desc">
+                Building secure, scalable enterprise applications with modern web technologies.
+                1.5+ years of production experience. YouTube tech educator. Problem solver.
+            </p>
+
+            <div class="hero-ctas">
+                <a href="./assets/Saurabh_Gupta_Resume.pdf" class="btn-primary">
+                    See my Resume
+                </a>
+                <a href="#projects" class="btn-outline">
+                    View Projects →
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-num" id="dsaCount">0</span>
+                    <span class="stat-label">DSA Problems</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">1.5+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">8.0</span>
+                    <span class="stat-label">CGPA</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            Scroll
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-tag">Technical Arsenal</div>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+
+        <div class="skills-grid">
+            <div class="skill-category skill-cat-1">
+                <span class="skill-icon">⚡</span>
+                <div class="skill-cat-name">Languages</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">TypeScript</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C/C++</span>
+                    <span class="skill-tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-category skill-cat-2">
+                <span class="skill-icon">🏗️</span>
+                <div class="skill-cat-name">Frameworks</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">ASP.NET Web API</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">SignalR</span>
+                </div>
+            </div>
+            <div class="skill-category skill-cat-3">
+                <span class="skill-icon">☁️</span>
+                <div class="skill-cat-name">Cloud & DevOps</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Microsoft Azure</span>
+                    <span class="skill-tag">Azure DevOps</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Git / GitHub</span>
+                    <span class="skill-tag">Linux</span>
+                </div>
+            </div>
+            <div class="skill-category skill-cat-4">
+                <span class="skill-icon">🗄️</span>
+                <div class="skill-cat-name">Databases</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">Azure Cosmos DB</span>
+                    <span class="skill-tag">MongoDB</span>
+                </div>
+            </div>
+            <div class="skill-category skill-cat-5">
+                <span class="skill-icon">🔗</span>
+                <div class="skill-cat-name">API & Auth</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">GraphQL</span>
+                    <span class="skill-tag">JWT Auth</span>
+                    <span class="skill-tag">Webhooks</span>
+                    <span class="skill-tag">OAuth2</span>
+                </div>
+            </div>
+            <div class="skill-category skill-cat-6">
+                <span class="skill-icon">🧩</span>
+                <div class="skill-cat-name">Concepts</div>
+                <div class="skill-tags">
+                    <span class="skill-tag">DSA</span>
+                    <span class="skill-tag">Clean Architecture</span>
+                    <span class="skill-tag">MVC</span>
+                    <span class="skill-tag">OOP</span>
+                    <span class="skill-tag">Agile/Scrum</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="section-tag">Career Path</div>
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="exp-timeline">
+            <div class="exp-item">
+                <div class="exp-dot"></div>
+                <div class="exp-meta">
+                    <span class="exp-period">OCT 2024 – PRESENT</span>
+                    <span class="exp-badge">Full-time</span>
+                    <span class="exp-period">Ahmedabad, Gujarat</span>
+                </div>
+                <div class="exp-company">Tech Extensor Pvt. Ltd.</div>
+                <div class="exp-role">Associate Software Developer</div>
+                <ul class="exp-points">
+                    <li>Engineered scalable Angular + .NET Web API modules integrated with SQL Server, Azure Cosmos DB,
+                        and Azure services for enterprise clients across multiple business verticals.</li>
+                    <li>Implemented JWT-based authentication and role-based authorization across multiple API endpoints,
+                        strengthening application security.</li>
+                    <li>Integrated Webhook event listeners to enable real-time third-party service communication,
+                        reducing manual data sync overhead.</li>
+                    <li>Implemented CI/CD pipelines via Azure DevOps, streamlining release cycles across environments.
+                    </li>
+                    <li>Collaborated closely with QA in agile sprints, maintaining high code quality across biweekly
+                        delivery cycles.</li>
+                </ul>
+            </div>
+
+            <div class="exp-item">
+                <div class="exp-dot exp-dot-dim"></div>
+                <div class="exp-meta">
+                    <span class="exp-period">MAY 2024 – JUN 2024</span>
+                    <span class="exp-badge exp-badge-intern">Internship</span>
+                    <span class="exp-period">Bhopal, M.P.</span>
+                </div>
+                <div class="exp-company">Netlink Software Pvt. Ltd.</div>
+                <div class="exp-role">Frontend & Java Developer Intern</div>
+                <ul class="exp-points">
+                    <li>Built reusable React components with Tailwind CSS that improved UX consistency and reduced
+                        frontend development time.</li>
+                    <li>Implemented dynamic data visualizations using Rete.js, enabling intuitive node-based workflow
+                        interfaces.</li>
+                    <li>Delivered biweekly sprint demos and integrated RESTful APIs in an agile team environment.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="section-tag">What I've Built</div>
+        <h2 class="section-title">Key Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-num">01 / CLIENT PROJECT</div>
+                <div class="project-name">ReSaleHub</div>
+                <div class="project-subtitle">Used Product Marketplace Platform</div>
+                <p class="project-desc">
+                    A full-stack marketplace enabling users to list, search, and filter second-hand products
+                    with image upload support. Secured with JWT refresh token flow and Azure Blob Storage for media
+                    handling.
+                    Deployed on Azure with Webhook notifications for buyer/seller events.
+                </p>
+                <div class="project-stack">
+                    <span class="stack-tag">ASP.NET Web API</span>
+                    <span class="stack-tag">Angular</span>
+                    <span class="stack-tag">SQL Server</span>
+                    <span class="stack-tag">Azure</span>
+                    <span class="stack-tag">JWT</span>
+                    <span class="stack-tag">Webhooks</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-num">02 / PERSONAL PROJECT</div>
+                <div class="project-name">GoalTracker</div>
+                <div class="project-subtitle">Daily Goal Tracking Application</div>
+                <p class="project-desc">
+                    A full-stack productivity app helping users track daily goals through evening ratings.
+                    Features real-time updates via SignalR WebSockets, automated reminders via Hangfire background jobs,
+                    and streak tracking with rating trends.
+                </p>
+                <div class="project-stack">
+                    <span class="stack-tag">ASP.NET Web API</span>
+                    <span class="stack-tag">Angular</span>
+                    <span class="stack-tag">SignalR</span>
+                    <span class="stack-tag">Hangfire</span>
+                    <span class="stack-tag">SQL Server</span>
+                </div>
+                <a href="https://github.com" class="project-link">View on GitHub ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+        <div class="section-tag">Recognition</div>
+        <h2 class="section-title">Achievements &amp; Leadership</h2>
+
+        <div class="ach-grid">
+            <div class="ach-card">
+                <span class="ach-icon">⚔️</span>
+                <div class="ach-title">900+ DSA Problems Solved</div>
+                <div class="ach-desc">Solved across LeetCode, HackerRank, and CodeChef — demonstrating strong
+                    algorithmic thinking and problem-solving.</div>
+            </div>
+            <div class="ach-card">
+                <span class="ach-icon">🏆</span>
+                <div class="ach-title">Smart India Hackathon</div>
+                <div class="ach-desc">2× participant in the national-level government innovation challenge (SIH) —
+                    India's biggest hackathon.</div>
+            </div>
+            <div class="ach-card">
+                <span class="ach-icon">🎖️</span>
+                <div class="ach-title">State-Level Hackathon Finalist</div>
+                <div class="ach-desc">Top performer among regional competitors at BIST Bhopal state-level hackathon.
+                </div>
+            </div>
+            <div class="ach-card">
+                <span class="ach-icon">👑</span>
+                <div class="ach-title">Club President</div>
+                <div class="ach-desc">Led Waste to Wonder Club — managed eco-driven technical initiatives with a
+                    cross-functional student team.</div>
+            </div>
+            <div class="ach-card">
+                <span class="ach-icon">🏅</span>
+                <div class="ach-title">NSS Best Effort Medal</div>
+                <div class="ach-desc">Recognized with the NSS Best Effort Volunteer Medal for outstanding community
+                    service at the national level.</div>
+            </div>
+            <div class="ach-card">
+                <span class="ach-icon">🎬</span>
+                <div class="ach-title">YouTube Tech Educator</div>
+                <div class="ach-desc">Creating developer tutorials covering GraphQL, JWT, Webhooks, and browser storage
+                    for the developer community.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="section-tag">Academic Background</div>
+        <h2 class="section-title">Education &amp; Certifications</h2>
+
+        <div class="edu-card reveal">
+            <div>
+                <div class="edu-degree">B.Tech — Computer Science Engineering</div>
+                <div class="edu-school">Bansal Institute of Science & Technology, Bhopal (M.P.) · Jun 2021 – May 2025
+                </div>
+
+                <div class="cert-list">
+                    <div class="cert-item">Cloud Computing & Cyber Security — Microsoft & LinkedIn Learning</div>
+                    <div class="cert-item">MERN Stack Development & C Programming — Sheryians Coding School</div>
+                    <div class="cert-item">NSS 'B' Certificate — Government of India</div>
+                </div>
+            </div>
+            <div class="edu-cgpa">
+                <span class="cgpa-num">8.0</span>
+                <span class="cgpa-label">CGPA / 10</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-inner">
+            <div class="contact-text">
+                <div class="section-tag">Let's Connect</div>
+                <div class="big-text">Ready to build<br><span>something great</span><br>together?</div>
+                <p style="color: var(--muted); font-size: 0.95rem; line-height: 1.8;">
+                    I'm actively seeking high-impact roles with greater technical ownership.
+                    Let's talk about what we can build together.
+                </p>
+                <div class="dsa-counter">
+                    <span class="dsa-num" id="dsaCount2">900</span>
+                    <span class="dsa-label">+ Problems Solved</span>
+                </div>
+            </div>
+
+            <div class="contact-links">
+                <a href="mailto:saurabhgupta7814@gmail.com" class="contact-link">
+                    <div class="contact-link-icon">✉</div>
+                    <div class="contact-link-info">
+                        <div class="contact-link-label">Email</div>
+                        <div class="contact-link-value">saurabhgupta7814@gmail.com</div>
+                    </div>
+                </a>
+                <a href="tel:+918109807814" class="contact-link">
+                    <div class="contact-link-icon">📱</div>
+                    <div class="contact-link-info">
+                        <div class="contact-link-label">Phone</div>
+                        <div class="contact-link-value">+91 8109807814</div>
+                    </div>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="contact-link">
+                    <div class="contact-link-icon">in</div>
+                    <div class="contact-link-info">
+                        <div class="contact-link-label">LinkedIn</div>
+                        <div class="contact-link-value">Connect on LinkedIn</div>
+                    </div>
+                </a>
+                <a href="https://github.com" target="_blank" class="contact-link">
+                    <div class="contact-link-icon" style="font-family: monospace; font-size: 0.8rem;">GH</div>
+                    <div class="contact-link-info">
+                        <div class="contact-link-label">GitHub</div>
+                        <div class="contact-link-value">Explore my repositories</div>
+                    </div>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="contact-link">
+                    <div class="contact-link-icon" style="color: #ff4444; font-size: 1.1rem;">▶</div>
+                    <div class="contact-link-info">
+                        <div class="contact-link-label">YouTube</div>
+                        <div class="contact-link-value">Tech Tutorials Channel</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-connect">
+            <div class="footer-connect-left">
+                <h3>Let's <span>Connect</span></h3>
+                <p>Open to new roles, collaborations, and conversations. Drop me a message — I respond to every email.
+                </p>
+            </div>
+            <div class="footer-email-block">
+                <div class="footer-email-label">Reach me directly</div>
+                <a href="mailto:saurabhgupta7814@gmail.com" class="footer-email-link">
+                    <div class="footer-email-icon">✉</div>
+                    saurabhgupta7814@gmail.com
+                </a>
+                <div class="footer-social-row">
+                    <a href="https://linkedin.com" target="_blank" class="footer-social-btn">in LinkedIn</a>
+                    <a href="https://github.com" target="_blank" class="footer-social-btn">⌥ GitHub</a>
+                    <a href="https://youtube.com" target="_blank" class="footer-social-btn">▶ YouTube</a>
+                    <a href="https://leetcode.com/u/saurabhgupta7814" target="_blank"
+                        class="footer-social-btn footer-social-btn--lc">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                            <path
+                                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                        </svg>
+                        LeetCode
+                    </a>
+                    <a href="tel:+918109807814" class="footer-social-btn">📱 +91 81098 07814</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Saurabh Gupta · Ahmedabad, Gujarat</span>
+            <span
+                style="font-family: 'Instrument Serif', serif; font-style: italic; font-size: 0.9rem; color: var(--muted);">Built
+                with passion for clean code</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
